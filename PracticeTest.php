@@ -11,6 +11,6 @@ class PracticeTest extends TestCase
     public function test_hello_world()
     {
         $greeting = 'Hello World';
-        $this->assertTrue($greeting == 'Hello World');
+        $this->assertEquals('Hello World', $greeting);
     }
 }
