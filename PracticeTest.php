@@ -39,9 +39,17 @@ class PracticeTest extends TestCase
         $this->assertArrayHasKey('parents', $fam);
     }
 
+    /** @test */
     public function test_variable_type()
     {
         $age = 25;
         $this->assertIsInt($age);
+    }
+
+    /** @test */
+    public function test_obj_is_instance_of_stdClass()
+    {
+        $obj = new stdClass();
+        $this->assertInstanceOf('stdClass', $obj);
     }
 }
